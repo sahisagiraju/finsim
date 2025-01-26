@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Visualization</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <!-- Top bar for date and financial counters -->
+    <div class="top-bar">
+        <div id="date-counter">Date: <span id="current-date">Aug, 2008</span></div>
+        <div id="financial-counters">
+            Net Worth: $<span id="net-worth">100,000</span> |
+            Cash: $<span id="cash">100,000</span> |
+            Assets: $<span id="assets">0</span>
+        </div>
+        <button id="play-button" onclick="play()">Play</button>
+        <button id="buy-button" onclick="goToBuyPage()">Buy</button>
+    </div>
+    
+    
+    <!-- Main container -->
+    <div class="container">
+        <h1>Stock Price Visualization</h1>
+        <div id="buttons">
+            <button class="stock-btn" onclick="addStockToGraph('apple')">Apple</button>
+            <button class="stock-btn" onclick="addStockToGraph('google')">Google</button>
+            <button class="stock-btn" onclick="addStockToGraph('walmart')">Walmart</button>
+            <button class="stock-btn" onclick="addStockToGraph('boeing')">Boeing</button>
+            <button class="stock-btn" onclick="addStockToGraph('prudential')">Prudential</button>
+        </div>
+        <div id="chart"></div>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Stocks</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/scripts.js"></script>
+</head>
+<body onload="loadBuyPage()">
+    <div class="container">
+        <h1>Buy Stocks</h1>
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>Stock</th>
+                    <th>Owned</th>
+                    <th>Price per Share</th>
+                    <th>Amount to Buy</th>
+                </tr>
+            </thead>
+            <tbody id="stock-rows">
+                <tr>
+                    <td>Apple</td>
+                    <td id="owned-apple">0</td>
+                    <td id="price-apple">$0.00</td>
+                    <td><input type="number" id="buy-apple" min="0" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td id="owned-google">0</td>
+                    <td id="price-google">$0.00</td>
+                    <td><input type="number" id="buy-google" min="0" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>Walmart</td>
+                    <td id="owned-walmart">0</td>
+                    <td id="price-walmart">$0.00</td>
+                    <td><input type="number" id="buy-walmart" min="0" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>Boeing</td>
+                    <td id="owned-boeing">0</td>
+                    <td id="price-boeing">$0.00</td>
+                    <td><input type="number" id="buy-boeing" min="0" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td>Prudential Financial</td>
+                    <td id="owned-prudential">0</td>
+                    <td id="price-prudential">$0.00</td>
+                    <td><input type="number" id="buy-prudential" min="0" placeholder="0"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="buy-all-button" onclick="buyAll()">Buy All</button>
+        <button onclick="window.location.href='/'">Back to Main</button>
+    </div>
+</body>
+</html>
